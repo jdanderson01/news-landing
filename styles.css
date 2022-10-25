@@ -7,8 +7,17 @@
     font-family: 'Playfair Display', serif;
 }
 
+body {
+    background-color: #4d5866;
+}
+
+
 a {
     text-decoration: none;
+}
+
+.article-title, .article-blurb {
+    color: #dde4e5;
 }
 
 .title-logo {
@@ -61,7 +70,7 @@ a {
 
 .news-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     max-width: 100%;
     margin: .5em auto;

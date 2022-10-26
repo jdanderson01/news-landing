@@ -120,13 +120,12 @@ li {
     background: #909697;
 }
 
-.footer-info {
+.footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
+    margin: .5em;
+    gap: .5rem;
     max-width: 100%;
-    margin: .5em auto;
-    padding: 1em;
 }
 
 .info-head {
@@ -138,12 +137,23 @@ li {
 
 }
 
-.info-head, .info-link {
+.info-head, .info-link, .socials-head, .social-link,
+.contact-head, .contact-link {
     color: #dde4e5;
  }
 
-.info-link:hover {
+.info-link:hover, .social-link:hover,
+.contact-link:hover {
     text-decoration: underline;
     color: #62787f;;
-    gap: .5em;
+}
+
+.socials-head {
+    grid-column: 2 / span 1;
+    grid-row: 1;
+}
+
+.contact-head {
+    grid-column: 3 / span 1;
+    grid-row: 1;
 }
